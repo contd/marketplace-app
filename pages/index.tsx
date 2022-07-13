@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   const { data } = useQuery(GET_PRODUCTS)
   console.log(' ==> ', data)
   return (
-    <ProductList products={[1,2,3]} />
+    <ProductList products={data.getAllProducts.data} />
   )
 }
 
